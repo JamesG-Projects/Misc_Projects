@@ -1,0 +1,21 @@
+maninp1:
+10	 = 10 
+maninp2:
+45	 = 45
+maninp3:
+383	 = 383
+maninp4:
+0x7fff8072b6fc	 = 0x7fff8072b6fc
+1	==  1
+maninp5:
+45	 = 45
+maninp6:
+10	 = 10
+maninp7:
+15	 = 15
+maninp8:
+199	 = 199
+maninp9:
+0xbe9c20	 = 0xbe9c20
+maninp9:
+199	 = 199

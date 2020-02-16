@@ -1,0 +1,102 @@
+//James Garrett
+//M12349664
+//Final Project 
+//4/20/2018
+
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <cmath>
+
+const int HEIGHT = 12; WIDTH = 30;
+const char *moves[];
+enum xDirection {Right, Left};
+enum yDirection {Up, Down};
+
+
+class MazeData {
+    public:
+    
+    //==========================================================================
+    //Constructors
+    //==========================================================================
+    //Default Constructors
+    //--------------------------------------------------------------------------
+    Maze() {
+    x = 0;
+    y = 0;
+    }
+    //--------------------------------------------------------------------------
+    //Set x and y components
+    //--------------------------------------------------------------------------
+    Maze(float X, float Y) {
+      x = X;
+      y = Y;
+    }
+    //--------------------------------------------------------------------------
+    //String list of prior moves
+    //Robot should mainly stick to the 'right' walls
+    //--------------------------------------------------------------------------
+    static vector<string> moves;
+    
+    private:
+    vector<string> maze;
+}
+
+struct Robot{
+    int x;
+    int y;
+    char sprite = 'R';
+    DirectionX pastDirX;
+    DirectionY pastDirY;
+};
+
+char RobotMove(Robot &robot, char MazeData[WIDTH][HEIGHT], int i, int j, vector<string> moves, bool &move) {
+    if (move) {
+        //Check up/down/left/right for possible moves
+        bool goUp = false;
+        bool goDown = false;
+        bool goRight = false;
+        bool goLeft = false;
+        
+        //Check if directions are possible
+        if (maze[robot.x+1][robot.y] == ' ') { //GO RIGHT
+        goRight = true;
+        }
+        else if (maze[robot.x-1][robot.y] == ' ') { //GO LEFT
+        goLeft = true;
+        }
+        else if (maze[robot.x][robot.y+1] == ' ') { //GO DOWN (y+1 is read as down -- [NOT UP])
+        goDown = true;
+        }
+        else if (maze[robot.x][robot.y-1] == ' ') { //GO UP
+        goUp = true;
+        }
+        
+}
+//Uneccesary====================================================================
+string getReadFileName() {
+    string fileName = "Maze";
+    /*cout << "Enter a file to read: " << endl;
+    cin >> fileName;*/
+    return fileName;
+}
+
+
+string getWriteFileName() {
+    string fileName = "OutPut";
+    /*cout << "Enter a file to write to: " << endl;
+    cin >> fileName;*/
+    return fileName;
+}
+//==============================================================================
+
+int main() {
+    
+    
+    
+    
+    return 0;
+}
