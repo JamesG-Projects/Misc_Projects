@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+struct TimeDecadesYears {
+   int decades;
+   int years;
+};
+
+TimeDecadesYears ConvertToDecadesAndYears(int totalYears) {
+   TimeDecadesYears tempVal;
+   int years = 0;
+   int decades = 0;
+   years = totalYears % 2;
+   cout << "THIS VALUE MOTHERFUCKER " << years;
+   
+return 0;
+}
+
+int main() {
+   TimeDecadesYears elapsedYears;
+   int totalYears;
+
+   cin >> totalYears;
+   elapsedYears = ConvertToDecadesAndYears(totalYears);
+   cout << elapsedYears.decades << " decades and " << elapsedYears.years << " years" << endl;
+
+   return 0;
+}
