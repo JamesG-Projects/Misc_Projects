@@ -1,7 +1,5 @@
 package DAO;
 
-import java.io.*;
-
 public interface People {
 	
 	void setPerson(String name, String state, Integer zip);

@@ -1,8 +1,5 @@
 package DAO;
 
-import DAO.People;
-import DAO.PeopleFactory;
-
 public abstract class PrototypeColor implements Cloneable {
 	public String name;
 	public String state;

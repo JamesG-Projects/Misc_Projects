@@ -205,6 +205,7 @@ public class FileIO {
 //				System.out.println("");
 			}
 			System.out.println("zipDictionary: " + zipDictionary);
+			wb.close();
 		}  
 		catch(Exception e) {
 			e.printStackTrace();

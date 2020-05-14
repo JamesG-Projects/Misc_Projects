@@ -11,11 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.*;
 
-import DAO.People;
-import DAO.PrototypeColor;
-import DAO.Red;
-import DAO.Blue;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Iterator;
@@ -137,6 +132,7 @@ public class PeopleFactory {
 					}
 				}
 			}
+			wb.close();
 		}  
 		catch(Exception e) {
 			e.printStackTrace();

@@ -3,10 +3,7 @@ package Singleton;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -53,6 +50,7 @@ public class Singleton {
 				}
 				System.out.println("");
 			}
+			wb.close();
 		}  
 		catch(Exception e) {
 			e.printStackTrace();
