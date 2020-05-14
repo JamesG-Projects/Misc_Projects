@@ -130,7 +130,7 @@ public class FileIO {
 		Map <String, ArrayList<Integer>> zipDictionary = new HashMap<String, ArrayList<Integer>>();
 		
 		try { 
-			File xlFile = new File("C:\\Users\\jbray\\eclipse-workspace\\Abstract_Interface_Prototype_Patterns\\zipCode_info.xlsx"); 	   //creating a new file instance
+			File xlFile = new File("Java\\Abstract_Interface_Prototype_Patterns\\zipCode_info.xlsx"); 	   //creating a new file instance
 			FileInputStream fis = new FileInputStream(xlFile); 														   //obtaining bytes from the file
 			XSSFWorkbook wb = new XSSFWorkbook(fis); 																   //creating Workbook instance that refers to .xlsx file
 			XSSFSheet sheet = wb.getSheetAt(0); 																	   //creating a Sheet object to retrieve object

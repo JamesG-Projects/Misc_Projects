@@ -26,8 +26,8 @@ class GeneratePeople {
 		
 		//Feature 2
 		PeopleFactory feature2 = PeopleFactory.getInstance();
-		zipDictionary = feature2.getZipDictionary("C:\\Users\\jbray\\eclipse-workspace\\Abstract_Interface_Prototype_Patterns\\zipCode_info.xlsx");
-		feature2.getPerson("input_sample2.txt", zipDictionary, validZipPersonList);
+		zipDictionary = feature2.getZipDictionary("Java\\Abstract_Interface_Prototype_Patterns\\zipCode_info.xlsx");
+		feature2.getPerson("Java\\Abstract_Interface_Prototype_Patterns\\input_sample2.txt", zipDictionary, validZipPersonList);
 		
 		//Feature 3
 		PrototypeColorCache.loadCache();
