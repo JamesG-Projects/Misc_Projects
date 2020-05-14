@@ -58,7 +58,7 @@ address: 3490 Bird Rd, Miami, FL, 33133
 name: Annie Lee
 address: 18585 Monterey Rd, Morgan Hill, CA, 96163
 
-name: Carolyn Richardson 
+name: Carolyn Richardson
 address: 240 E 32nd St, Garden City, ID, 83714
 
 name: Charles Adams
