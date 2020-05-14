@@ -47,9 +47,9 @@ class invalidZipPerson implements People {
 	int zip;
 	
 	public void setPerson(String pName, String pState, Integer pZip) {
-		String name = pName;
-		String state = pState;
-		int zip = pZip;
+		name = pName;
+		state = pState;
+		zip = pZip;
 	}
 	
 	public void getPerson() {
